@@ -1,0 +1,22 @@
+used with map,reduce filter function
+
+
+numbers.map(function(x){
+return x*x;
+
+})
+
+
+
+//using arrow function
+
+
+numbers.map(x=>x*x) //if we do not have multiple lines of code
+
+
+numbers.map(x=>{
+return x*x;
+})
+
+
+N.B: there should not be any space between equal and arrow
