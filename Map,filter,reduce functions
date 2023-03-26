@@ -1,0 +1,93 @@
+//Map function 
+(loops through a given array and creates a new array with modifications done to the elements according to a given function)
+
+var numbers=[1,2,3,4]
+
+function double(x){
+	return x*2;
+}
+
+const newNumbers=numbers.map(double);
+
+console.log(newNumbers); //2,4,6,8
+
+----------------------------------------------
+2nd method using for each instead of map
+in for reach we also use a function but instead of returning values we push in an empty array
+
+const newNum=[];
+numbers.forEach(function(x){
+ newNum.push(x*2);
+
+})
+
+===================================================
+
+//Filter function
+(loops through array and creates a new array with the elements which satisfy the condition given in function)
+
+
+const newNumbers=numbers.filter(function(x){
+	return x>2;
+})
+
+ans:3,4
+
+const newNum=[];
+numbers.forEach(function(x){
+	if(x>2)
+	newNum.push(x);
+})
+
+
+
+===========================================================
+
+//Reduce function
+
+
+do some operation in the array ...like adding all the numbers if array
+
+without reduce function
+
+const ans=0;
+numbers.forEach(function(x){
+	ans+=x;
+
+})
+
+//with reduce
+
+numbers.reduce(function(accumulator,currentNum){
+	return accumulator+currentNum;
+
+})
+
+
+//here accumulator initialises to first number in the array and current number to second number then the return value gets updated to the accumulator value every time.
+
+
+
+
+==========================================================================================
+
+//find
+(returns the first element of array that matches the function condition)
+
+
+numbers.find(function(x){
+	return x>10;
+})
+
+
+once it finds a value it will stop iterating the entire array.
+
+======================================================================
+
+//substring function
+
+returns a substring
+
+
+
+
